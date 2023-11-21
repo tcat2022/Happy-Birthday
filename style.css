@@ -18,45 +18,44 @@ transform: translate(-50%,-50%);
 #hello path:nth-child(6){
     stroke-dasharray: 182;
     stroke-dashoffset: 182;
-    animation: fill 1.2s forwards;
+    animation: fill 1.5s forwards;
     animation-delay: .6s;
 }
 
 #hello path:nth-child(5){
     stroke-dasharray: 182;
     stroke-dashoffset: 182;
-    animation: fill 2s forwards;
-    animation-delay: 1.5s;
+    animation: fill 1.5s forwards;
+    animation-delay: 1.4s;
 }
 
 #hello path:nth-child(4){
     stroke-dasharray: 182;
     stroke-dashoffset: 182;
-    animation: fill 2s forwards;
-    animation-delay: 2s;
+    animation: fill 1.5s forwards;
+    animation-delay: 1.8s;
 }
 
 #hello path:nth-child(3){
     stroke-dasharray: 182;
     stroke-dashoffset: 182;
-    animation: fill 2s forwards;
-    animation-delay: 3s;
+    animation: fill 1.5s forwards;
+    animation-delay: 2.8s;
 }
 
 #hello path:nth-child(2){
     stroke-dasharray: 182;
     stroke-dashoffset: 182;
-    animation: fill 2s forwards;
-    animation-delay: 4s;
+    animation: fill 1.5s forwards;
+    animation-delay: 3.4s;
 }
 
 #hello path:nth-child(1){
     stroke-dasharray: 182;
     stroke-dashoffset: 182;
-    animation: fill 2s forwards;
-    animation-delay: 5s;
+    animation: fill 1.5s forwards;
+    animation-delay: 4s;
 }
-
 @keyframes fill {
     0%{
         stroke-dashoffset: 182;
