@@ -9,20 +9,24 @@ min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: black;
 }
 
 #card{
     position: relative;
-    width: 500px;
+    width: 400px;
     height: 500px;
 transform-style: preserve-3d;
 transform: perspective(1000px);
-background:lightskyblue;
-transition: transform 1s, width .8s;
+background:white;
+transition: transform 1s;
+border-left: none;
+border-radius: 10px;
+border-top-left-radius:0;
+border-bottom-left-radius:0;
 }
 #card:hover{
    transform: translateX(50%);
-   width: 350px;
 }
 
 #card:hover #box{
@@ -30,7 +34,10 @@ transition: transform 1s, width .8s;
 }
 
 .main{
-    position: absolute;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
 }
 
 #box{
@@ -45,30 +52,36 @@ transition: transform 1s, width .8s;
 
 #back{
     position: absolute;
-    top: 0;
+    top:0;
     width:100%;
     height: 100%;
-    background-color: lightskyblue;
+    background-color: white;
+    backface-visibility:hidden;
     transform: rotateY(180deg);
-    backface-visibility: hidden;
-    border-right: 1px solid white;
-    transform-style: preserve-3d;
+    border-right: 1px solid black; 
+    border-radius: 10px;
+border-top-right-radius:0;
+border-bottom-right-radius:0;
+text-align: center;
 }
 
 #cat{
     width: 100%;
     height: 100%;
     object-fit:cover;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border-top-left-radius:0;
+border-bottom-left-radius:0;
 }
 
 #both {
-    width: 200px;
-    height: 200px;
-    position: absolute;
+    width: 300px;
+    height: 300px;
+    position:absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%); 
-  background-color: red;
 }
 
 @keyframes cursive2 {
@@ -106,29 +119,42 @@ transition: transform 1s, width .8s;
     }
 }
 
-#both path:nth-child(4){
-    stroke-dasharray: 139;
-    stroke-dashoffset: 139;
-    animation: cursive3 1s forwards;
+#cursive3{
+    stroke-dasharray: 140;
+    stroke-dashoffset: 140;  
 }
 
-#both path:nth-child(3){
+#cursive3{
+    animation: cursive3 1s forwards;
+    animation-delay: 1s;
+}
+
+#cursive4{
     stroke-dasharray:47;
     stroke-dashoffset: 47;
-    animation: cursive4 1s forwards;
-    animation-delay: .9s;
 }
 
-#both path:nth-child(2){
+.cursive4{
+    animation: cursive4 1s forwards;
+    animation-delay: 1.9s;
+}
+
+#cursive5{
         stroke-dasharray:99;
         stroke-dashoffset: 99;
-        animation: cursive5 1s forwards;
-        animation-delay: 1.8s;
 }
 
-#move{
+.cursive5{
+    animation: cursive5 1s forwards;
+    animation-delay: 2.7s;
+}
+
+#cursive2{
     stroke-dasharray: 1143;
     stroke-dashoffset: 1143;
+}
+
+.cursive2{
     animation: cursive2 4s forwards linear;
-    animation-delay:2.7s ;
+    animation-delay: 3.7s;
 }
