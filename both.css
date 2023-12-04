@@ -10,6 +10,7 @@ min-height: 100vh;
     justify-content: center;
     align-items: center;
     background: black;
+    cursor:url('light.png'), pointer;
 }
 
 #card{
@@ -33,11 +34,22 @@ border-bottom-left-radius:0;
     transform:rotateY(-180deg);
 }
 
-.main{
+#nineteen{
 position: absolute;
 left: 50%;
 top: 50%;
 transform: translate(-50%,-50%);
+font-size: 100px;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: lightslategray;
+text-shadow: 
+-1px 1px 0 rgba(119, 136, 153, 0.411),
+-2px 2px 0 rgba(119, 136, 153, 0.411),
+-3px 3px 0 rgba(119, 136, 153, 0.411),
+-4px 4px 0 rgba(119, 136, 153, 0.411),
+-5px 5px 0 rgba(119, 136, 153, 0.411),
+-6px 6px 0 rgba(119, 136, 153, 0.411),
+-7px 7px 0 rgba(119, 136, 153, 0.411);
 }
 
 #box{
@@ -65,7 +77,7 @@ border-bottom-right-radius:0;
 text-align: center;
 }
 
-#cat{
+#cover{
     width: 100%;
     height: 100%;
     object-fit:cover;
@@ -75,16 +87,20 @@ text-align: center;
 border-bottom-left-radius:0;
 }
 
-#both {
-    width: 300px;
+#happy {
+ width: 300px;
     height: 300px;
     position:absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%); 
+    fill: none;
+    stroke-width: 3;
+    stroke:lightskyblue;
+    stroke-linecap: round;
 }
 
-@keyframes cursive2 {
+@keyframes appy {
     0%{
         stroke-dashoffset:1143;
     }
@@ -93,7 +109,7 @@ border-bottom-left-radius:0;
     }
 }
 
-@keyframes cursive3 {
+@keyframes h2{
     0%{
         stroke-dashoffset:139;
     }
@@ -102,7 +118,7 @@ border-bottom-left-radius:0;
     }
 }
 
-@keyframes cursive4 {
+@keyframes h3 {
     0%{
         stroke-dashoffset:47;
     }
@@ -110,7 +126,7 @@ border-bottom-left-radius:0;
         stroke-dashoffset: 0;
     }
 }
-@keyframes cursive5 {
+@keyframes h1 {
     0%{
         stroke-dashoffset:99;
     }
@@ -119,42 +135,42 @@ border-bottom-left-radius:0;
     }
 }
 
-#cursive3{
-    stroke-dasharray: 140;
-    stroke-dashoffset: 140;  
-}
-
-#cursive3{
-    animation: cursive3 1s forwards;
-    animation-delay: 1s;
-}
-
-#cursive4{
-    stroke-dasharray:47;
-    stroke-dashoffset: 47;
-}
-
-.cursive4{
-    animation: cursive4 1s forwards;
-    animation-delay: 1.9s;
-}
-
-#cursive5{
+#h1{
         stroke-dasharray:99;
         stroke-dashoffset: 99;
 }
 
-.cursive5{
-    animation: cursive5 1s forwards;
+.h1{
+    animation: h1 1s forwards;
     animation-delay: 2.7s;
 }
 
-#cursive2{
+#h2{
+    stroke-dasharray: 140;
+    stroke-dashoffset: 140;  
+}
+
+.h2{
+    animation:h2 1s forwards;
+    animation-delay: 1s;
+}
+
+#h3{
+    stroke-dasharray:47;
+    stroke-dashoffset: 47;
+}
+
+.h3{
+    animation: h3 1s forwards;
+    animation-delay: 1.9s;
+}
+
+#appy{
     stroke-dasharray: 1143;
     stroke-dashoffset: 1143;
 }
 
-.cursive2{
-    animation: cursive2 4s forwards linear;
+.appy{
+    animation: appy 4s forwards linear;
     animation-delay: 3.7s;
 }

@@ -1,12 +1,12 @@
 let card = document.getElementById('card');
-let cursive2 = document.getElementById('cursive2');
-let cursive5 = document.getElementById('cursive5');
-let cursive4 = document.getElementById('cursive4');
-let cursive3 = document.getElementById('cursive3');
+let appy = document.getElementById('appy');
+let h1 = document.getElementById('h1');
+let h3 = document.getElementById('h3');
+let h2 = document.getElementById('h2');
 
 card.addEventListener('mouseover', function() {
-cursive2.classList.add('cursive2');
-cursive5.classList.add('cursive5');
-cursive4.classList.add('cursive4');
-cursive3.classList.add('cursive3');
+h1.classList.add('h1');
+h2.classList.add('h2');
+h3.classList.add('h3');
+appy.classList.add('appy');
   });
