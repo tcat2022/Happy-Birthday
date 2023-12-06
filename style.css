@@ -5,7 +5,7 @@
 }
 
 body {
-    background: black;
+background: linear-gradient(180deg, red, yellow);
 }
 
 #card {
@@ -97,7 +97,6 @@ gap: 20px;
     stroke-width: 3;
     stroke: black;
     stroke-linecap: round;
-    background: lightcoral;
 }
 
 #birthday{
@@ -105,9 +104,8 @@ gap: 20px;
     height: 110px;
     fill: none;
     stroke-width: 3;
-    stroke: black;
+    stroke:lightslategray;
     stroke-linecap: round;
-    background: lightgreen;
 }
 
 #jack{
@@ -117,8 +115,6 @@ gap: 20px;
     stroke-width: 3;
     stroke: black;
     stroke-linecap: round;
-    background: burlywood;
-
 }
 
 @keyframes appy {
