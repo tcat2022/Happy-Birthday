@@ -4,8 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
-background: linear-gradient(180deg, red, yellow);
+html{
+    cursor: url('mantis2.png'),pointer;
+}
+
+body{
+    background: linear-gradient(to bottom,#5a3f32 5%, #d56c38 25% ,#f7e493 45%,#d56c38 65% ,#5a3f32 100% ) fixed;
+}
+
+#canvas{
+    position: absolute;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    display: inherit;
 }
 
 #card {
