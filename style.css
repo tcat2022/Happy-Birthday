@@ -120,7 +120,7 @@ body{
     height: 134px;
     fill: none;
     stroke-width: 3;
-    stroke: black;
+    stroke: orange;
     stroke-linecap: round;
 }
 
@@ -131,7 +131,7 @@ body{
     height: 110px;
     fill: none;
     stroke-width:3;
-    stroke: black;
+    stroke: lightseagreen;
     stroke-linecap: round;
 }
 
@@ -142,7 +142,7 @@ body{
     height:130px;
     fill: none;
     stroke-width: 3;
-    stroke: black;
+    stroke: green;
     stroke-linecap: round;
 }
 
