@@ -3,6 +3,10 @@ let appy = document.getElementById('appy');
 let h1 = document.getElementById('h1');
 let h3 = document.getElementById('h3');
 let h2 = document.getElementById('h2');
+let irthday = document.getElementById('irthday');
+let i = document.getElementById('i');
+let t = document.getElementById('t');
+let jack1 = document.getElementById('jack1');
 let body = document.getElementById('body');
 let canvas = document.getElementById('canvas');
 
@@ -11,6 +15,10 @@ card.addEventListener('mouseover', function () {
   h2.classList.add('h2');
   h3.classList.add('h3');
   appy.classList.add('appy');
+  irthday.classList.add('irthday')
+  i.classList.add('i');
+  t.classList.add('t');
+  jack1.classList.add('jack1');
  let a = setTimeout(function(){
     canvas.style.display = 'none';
   },600)

@@ -97,12 +97,25 @@ body{
     border-radius: 10px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-display: flex;
-flex-direction: column;
-gap: 20px;
+}
+
+#write-container{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    height:fit-content ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 #happy {
+    position: relative;
+    left: -8px;
+    top: -10px;
+    margin-top: 20px;
     width: 280px;
     height: 134px;
     fill: none;
@@ -112,17 +125,21 @@ gap: 20px;
 }
 
 #birthday{
-    width: 398px;
+    position: relative;
+    left:5px;
+    width: 378px;
     height: 110px;
     fill: none;
-    stroke-width: 3;
-    stroke:lightslategray;
+    stroke-width:3;
+    stroke: black;
     stroke-linecap: round;
 }
 
 #jack{
-    width: 182px;
-    height:110px;
+    position: relative;
+    left: 125px;
+    width: 202px;
+    height:130px;
     fill: none;
     stroke-width: 3;
     stroke: black;
@@ -175,7 +192,7 @@ gap: 20px;
 }
 
 .h1 {
-    animation: h1 1s forwards;
+    animation: h1 1s forwards linear;
     animation-delay: 2.7s;
 }
 
@@ -185,7 +202,7 @@ gap: 20px;
 }
 
 .h2 {
-    animation: h2 1s forwards;
+    animation: h2 1s forwards linear;
     animation-delay: 1s;
 }
 
@@ -195,7 +212,7 @@ gap: 20px;
 }
 
 .h3 {
-    animation: h3 1s forwards;
+    animation: h3 1s forwards linear;
     animation-delay: 1.9s;
 }
 
@@ -205,6 +222,86 @@ gap: 20px;
 }
 
 .appy {
-    animation: appy 4s forwards linear;
+    animation: appy 4.5s forwards linear;
     animation-delay: 3.7s;
+}
+
+@keyframes irthday {
+    0% {
+        stroke-dashoffset: 879;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes i {
+    0% {
+        stroke-dashoffset:2;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes t {
+    0% {
+        stroke-dashoffset: 12;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#irthday {
+    stroke-dasharray: 879;
+    stroke-dashoffset: 879;
+}
+
+.irthday {
+    animation: irthday 5s forwards linear;
+    animation-delay: 6.8s;
+}
+
+#i {
+    stroke-dasharray: 2;
+    stroke-dashoffset: 2;
+}
+
+.i {
+    animation: i 1.5s forwards linear;
+    animation-delay: 12.5s;
+}
+
+#t {
+    stroke-dasharray: 12;
+    stroke-dashoffset: 12;
+}
+
+.t {
+    animation: t .5s forwards linear;
+    animation-delay: 13.1s;
+}
+
+@keyframes jack1 {
+    0% {
+        stroke-dashoffset: 387;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#jack1 {
+    stroke-dasharray: 387;
+    stroke-dashoffset: 387;
+}
+
+.jack1 {
+    animation: jack1 2s forwards linear;
+    animation-delay:14.4s;
 }
