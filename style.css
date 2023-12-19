@@ -44,12 +44,49 @@ body{
     transform: rotateY(-180deg);
 }
 
-#nineteen {
-    position: absolute;
+#candle-container{
+    position:absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
-    font-size: 100px;
+    width:200px;
+    height:200px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#candles{
+    position: relative;
+    text-align:center;
+    width: 100%;
+    height: 140px;
+}
+
+#stem1{
+width: 5px;
+height: 25px;
+background-color: black;
+position: absolute;
+left: 30%;
+}
+
+#stem2{
+    width: 5px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    left: 65%;
+}
+
+#nineteen {
+    text-align: center;
+    position: absolute;
+    bottom: -10px;
+    font-size: 150px;
+    width: 100%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: lightslategray;
     text-shadow:
@@ -60,7 +97,6 @@ body{
         -5px 5px 0 rgba(119, 136, 153, 0.411),
         -6px 6px 0 rgba(119, 136, 153, 0.411),
         -7px 7px 0 rgba(119, 136, 153, 0.411);
-        z-index: -1;
 }
 
 #box {
@@ -305,3 +341,14 @@ body{
     animation: jack1 2s forwards linear;
     animation-delay:14.4s;
 }
+
+#flames{
+    width: 100%;
+    height: 60px;
+    background-color: lightblue;
+}
+  
+  #flame2 {
+    position: absolute;
+    left:25%;
+  }
