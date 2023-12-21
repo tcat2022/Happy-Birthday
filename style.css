@@ -138,10 +138,11 @@
      color:black;
      display:inherit;
      z-index: -1;
-     font-family: 'Arimo', sans-serif;
+font-family: 'Arimo', sans-serif;
 font-family: 'Diphylleia', serif;
 font-family: 'Lumanosimo', cursive;
 font-family: 'Playfair Display', serif;
+font-size: 30px;
  }
 
  #tommey::after,
@@ -164,6 +165,7 @@ font-family: 'Playfair Display', serif;
      background:#a84818;
      width: 1.5%;
      animation:var(--animation1,none);
+     height: 100%;
  }
 
  @keyframes typewriter {
