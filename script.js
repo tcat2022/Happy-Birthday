@@ -16,8 +16,10 @@ let stem2 = document.getElementById('stem2');
 let div1 = document.getElementById('stem1').getElementsByTagName("div")[0]
 let div2 = document.getElementById('stem2').getElementsByTagName("div")[0]
 
+var audio = new Audio('song.m4a');
 
 card.addEventListener('mouseover', function () {
+audio.play();
   h1.classList.add('h1');
   h2.classList.add('h2');
   h3.classList.add('h3');
@@ -31,7 +33,9 @@ card.addEventListener('mouseover', function () {
   },600)
  card.style.cursor = 'url(light.png) , auto'
   card.addEventListener('mouseleave', () => {
+    
    setTimeout(function() {
+    audio.pause();
     canvas.style.display = 'inherit'; 
    },600); 
     clearTimeout(a)
