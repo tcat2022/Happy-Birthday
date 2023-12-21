@@ -13,6 +13,9 @@ let flame1 = document.getElementById('flame1');
 let flame2 = document.getElementById('flame2');
 let stem1 = document.getElementById('stem1');
 let stem2 = document.getElementById('stem2');
+let div1 = document.getElementById('stem1').getElementsByTagName("div")[0]
+let div2 = document.getElementById('stem2').getElementsByTagName("div")[0]
+
 
 card.addEventListener('mouseover', function () {
   h1.classList.add('h1');
@@ -35,11 +38,16 @@ card.addEventListener('mouseover', function () {
     })
 });
 
+
 stem1.addEventListener('click', function() {
-    flame1.style.display = 'inherit';
+   div1.style.backgroundColor = "rgba(27, 12, 0, 0.76)"
+    flame1.style.opacity = '1';
+    flame1.classList.add('blink')
 })
 stem2.addEventListener('click', function() {
-    flame2.style.display = 'inherit';
+    div2.style.backgroundColor = "rgba(27, 12, 0, 0.76)"
+    flame2.style.opacity = '1';
+    flame2.classList.add('blink')
 })
 
 
