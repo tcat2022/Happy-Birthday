@@ -15,6 +15,7 @@ let stem1 = document.getElementById('stem1');
 let stem2 = document.getElementById('stem2');
 let div1 = document.getElementById('stem1').getElementsByTagName("div")[0]
 let div2 = document.getElementById('stem2').getElementsByTagName("div")[0]
+let tommey = document.getElementById('tommey')
 
 var audio = new Audio('song.m4a');
 
@@ -31,6 +32,15 @@ audio.play();
  let a = setTimeout(function(){
     canvas.style.display = 'none';
   },600)
+  setTimeout(function(){
+    tommey.style.setProperty('--display','block');
+    tommey.style.setProperty('--animation','typewriter 4s steps(11)  forwards');
+    tommey.style.setProperty('--animation1','typewriter 4s steps(11) forwards, blinker .75s infinite');
+  },17500)
+  setTimeout(function(){
+    tommey.style.setProperty('--display','none');
+  },22500)
+
  card.style.cursor = 'url(light.png) , auto'
   card.addEventListener('mouseleave', () => {
     
