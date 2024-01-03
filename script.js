@@ -13,14 +13,19 @@ let flame1 = document.getElementById('flame1');
 let flame2 = document.getElementById('flame2');
 let stem1 = document.getElementById('stem1');
 let stem2 = document.getElementById('stem2');
-let div1 = document.getElementById('stem1').getElementsByTagName("div")[0]
-let div2 = document.getElementById('stem2').getElementsByTagName("div")[0]
-let tommey = document.getElementById('tommey')
+let div1 = document.getElementById('stem1').getElementsByTagName("div")[0];
+let div2 = document.getElementById('stem2').getElementsByTagName("div")[0];
+let tommey = document.getElementById('tommey');
+let line = document.getElementById('line');
+
+setInterval(function(){
+console.log(count)
+},100)
 
 var audio = new Audio('song.m4a');
 
 card.addEventListener('mouseover', function () {
-audio.play();
+        audio.play(); 
   h1.classList.add('h1');
   h2.classList.add('h2');
   h3.classList.add('h3');
@@ -32,18 +37,17 @@ audio.play();
  let a = setTimeout(function(){
     canvas.style.display = 'none';
   },600)
-  setTimeout(function(){
-    tommey.style.setProperty('--display','block');
+ setTimeout(function(){
     tommey.style.setProperty('--animation','typewriter 4s steps(11)  forwards');
-    tommey.style.setProperty('--animation1','typewriter 4s steps(11) forwards, blinker .75s infinite');
+    line.classList.add('line');
   },17500)
+
   setTimeout(function(){
-    tommey.style.setProperty('--display','none');
-  },22500)
+line.style.display = 'none'
+  },22000)
 
  card.style.cursor = 'url(light.png) , auto'
   card.addEventListener('mouseleave', () => {
-    
    setTimeout(function() {
     audio.pause();
     canvas.style.display = 'inherit'; 
@@ -51,7 +55,6 @@ audio.play();
     clearTimeout(a)
     })
 });
-
 
 stem1.addEventListener('click', function() {
    div1.style.backgroundColor = "rgba(27, 12, 0, 0.76)"
